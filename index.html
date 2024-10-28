@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Security Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .warning-box {
+            background-color: white;
+            border: 3px solid #dc3545;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+        .warning-symbol {
+            color: #dc3545;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .alert-text {
+            color: #dc3545;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .details {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .overlay h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #dc3545; /* Red color for "SECURITY ALERT" */
+        }
+        .overlay p {
+            font-size: 24px;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        .overlay .fake-support-number {
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay" class="overlay">
+        <h1>SECURITY ALERT</h1>
+        <p>Your system has encountered a serious security threat.</p>
+        <p>For immediate assistance, please call the support number below:</p>
+        <div class="fake-support-number">Call Now: 5675786765</div>
+    </div>
+</body>
+</html>
