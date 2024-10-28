@@ -66,6 +66,11 @@
         }
         .overlay .fake-support-number {
             font-size: 28px;
+            animation: move 1s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(10px); }
         }
     </style>
 </head>
